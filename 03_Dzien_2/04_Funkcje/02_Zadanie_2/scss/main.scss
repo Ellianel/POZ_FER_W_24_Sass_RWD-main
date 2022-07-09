@@ -1,0 +1,12 @@
+@use "sass:color";
+
+@for $i from 1 through 4 {
+    h#{ $i } 
+    {
+        margin: 0;
+        background: color.adjust(lime, $lightness: $i * 15%);
+        color: #fff;
+        padding: 10px;
+
+    }
+}

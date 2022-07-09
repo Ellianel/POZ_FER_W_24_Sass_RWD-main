@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAEA;EACI,gBAHG;ACEP;ADGI;EACI,YAAA;ACDR","file":"main.css","sourcesContent":["$color:gold;\r\n\r\nbody {\r\n    background: $color;\r\n\r\n    h1 {\r\n        color:black ;\r\n    }\r\n}\r\n\r\n","body {\n  background: gold;\n}\nbody h1 {\n  color: black;\n}"]}

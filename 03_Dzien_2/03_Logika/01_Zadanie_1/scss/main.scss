@@ -1,0 +1,16 @@
+@use "sass:color";
+
+
+$fontSize: 16px;
+
+@for $i from 1 through 6 {
+    h#{ $i }
+    {
+        font-size: $fontSize + (10 * (7 - $i));
+        margin: 0;
+        color: color.mix(tomato, cornflowerblue, $i * 10%);
+        color:#fff;
+        padding: 10px;
+
+    }
+}

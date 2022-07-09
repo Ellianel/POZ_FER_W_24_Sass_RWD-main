@@ -1,0 +1,11 @@
+@use "../settings/all";
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+  }
+  
+  .site__container {
+    max-width: all.$width;
+    background: #e3e3e3;
+    margin: 40px auto;
+  }

@@ -1,0 +1,10 @@
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.menu li {
+  border: 5px solid blue;
+  width: 200px;
+}
+/*# sourceMappingURL=main.css.map */

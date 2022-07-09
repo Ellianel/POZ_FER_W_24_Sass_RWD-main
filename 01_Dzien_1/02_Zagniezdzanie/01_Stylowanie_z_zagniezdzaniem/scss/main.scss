@@ -1,0 +1,59 @@
+$primary-color: cornflowerblue;
+$accent-color: tomato;
+$main-width: 1000px;
+
+.main-width {
+
+    width: $main-width;
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        font-weight: bold;
+
+        &:first-child {
+            color: red;
+        }
+    }
+}
+.menu {
+    background-color: $primary-color;
+
+     li {
+        display: inline-block;
+        padding-left: 10px;
+     }
+}
+.header {
+    border: 3px solid $accent-color;
+}
+.section_ul {
+    &:first-child {
+        color: orange;
+    }
+    &:last-child {
+        color: lime;
+    }
+    &:hover {
+        color: red;
+    }
+}
+
+footer .menu {
+
+    
+    display:flex ;
+    justify-content: flex-start;
+
+
+    &:hover {
+        background-color: lime;
+    }
+
+    &:last-child {
+        margin-left: auto;
+    }
+}

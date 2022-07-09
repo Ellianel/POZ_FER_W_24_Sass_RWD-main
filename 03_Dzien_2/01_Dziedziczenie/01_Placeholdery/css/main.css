@@ -1,0 +1,23 @@
+.container {
+  background-color: aliceblue;
+  margin: 20px 20px;
+}
+
+.info, .error, .success {
+  width: 200px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.success {
+  background: gold;
+}
+
+.error {
+  background-color: tomato;
+}
+
+.info {
+  background-color: blue;
+}
+/*# sourceMappingURL=main.css.map */

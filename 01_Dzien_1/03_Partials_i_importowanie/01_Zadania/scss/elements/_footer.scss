@@ -1,0 +1,15 @@
+@use "../settings/all" as w;
+@use "../settings/colors" as y;
+
+.footer {
+    background: y.$yellow;
+    margin-top: 20px;
+  }
+  
+  .footer__text {
+    text-align: center;
+    font-size: w.$font;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+  

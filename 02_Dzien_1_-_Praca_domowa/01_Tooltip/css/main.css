@@ -1,0 +1,16 @@
+li {
+  color: red;
+  position: relative;
+}
+li::before {
+  content: "tekst";
+  display: inline-block;
+  padding: 10px 30px;
+  background: blue;
+  color: aliceblue;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
+  transform: translate(50%);
+}
+/*# sourceMappingURL=main.css.map */

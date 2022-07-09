@@ -1,0 +1,7 @@
+@use "sass:color";
+$color: color.adjust(red, $lightness: 40%);
+@debug $color;
+
+h1 {
+    color: $color;
+}

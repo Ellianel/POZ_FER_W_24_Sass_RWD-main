@@ -1,0 +1,21 @@
+@use 'sass:map';
+@use 'sass:list';
+
+$map: (
+	min-width: 200px,
+	max-width: 1000px,
+);
+
+$list: map-values($map);
+@debug $list;
+
+.menu {
+	display: flex;
+	list-style: none;
+	padding: 0;
+
+	li {
+		border: 5px solid blue;
+		width: list.nth($list, 1);
+	}
+}

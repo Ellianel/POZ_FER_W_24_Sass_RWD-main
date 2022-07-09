@@ -1,0 +1,48 @@
+.main-width {
+  width: 1000px;
+}
+.main-width ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main-width li {
+  font-weight: bold;
+}
+.main-width li:first-child {
+  color: red;
+}
+
+.menu {
+  background-color: cornflowerblue;
+}
+.menu li {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.header {
+  border: 3px solid tomato;
+}
+
+.section_ul:first-child {
+  color: orange;
+}
+.section_ul:last-child {
+  color: lime;
+}
+.section_ul:hover {
+  color: red;
+}
+
+footer .menu {
+  display: flex;
+  justify-content: flex-start;
+}
+footer .menu:hover {
+  background-color: lime;
+}
+footer .menu:last-child {
+  margin-left: auto;
+}
+/*# sourceMappingURL=main.css.map */

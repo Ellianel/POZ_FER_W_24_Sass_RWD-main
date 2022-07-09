@@ -1,0 +1,25 @@
+@mixin placeholder() {
+    &::placeholder {
+        color: #aaa;
+        @content;
+    }
+    
+    &:hover::placeholder {
+        color: #ddd;
+        @content;
+    }
+    
+}
+
+input,
+textarea {
+	padding: 10px;
+	margin-bottom: 10px;
+
+    @include placeholder() {
+        font-weight: bold;
+        font-style: italic;
+        font-family: serif;
+    }
+
+}

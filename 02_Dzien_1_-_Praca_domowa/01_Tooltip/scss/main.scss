@@ -1,0 +1,23 @@
+
+li {
+    color: red;
+    position: relative;
+    
+    &::before {
+        content: attr();
+        display: inline-block;
+        padding: 10px 30px;
+        background: blue;
+        color: aliceblue;
+        position: absolute;
+        left: 0;
+        top: calc(100% + 10px);
+        transform: translate(50%);
+    }
+}
+
+&:hover {
+    &::before {
+        display: block;
+    }
+}

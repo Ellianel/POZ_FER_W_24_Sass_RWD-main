@@ -1,0 +1,22 @@
+.test-mixin::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.test-mixin {
+  background: gold;
+}
+
+.left_box,
+.right_box {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 0, 0, 0.6);
+  float: left;
+}
+
+.right_box {
+  float: right;
+}
+/*# sourceMappingURL=main.css.map */

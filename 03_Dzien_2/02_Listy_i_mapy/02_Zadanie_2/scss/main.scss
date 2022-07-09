@@ -1,0 +1,22 @@
+@use "sass:map";
+
+$colors:(
+body: lime, 
+tekst: violet,
+  p3:blue,
+  p: tomato,
+  footer: yellow
+);
+body {
+    background-color: map.get($colors,body);
+}
+
+p {
+    background-color: map.get($colors,p3);
+
+}
+
+ footer {
+    background-color: map.get($colors,footer);
+
+ }

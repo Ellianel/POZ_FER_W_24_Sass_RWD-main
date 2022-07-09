@@ -1,0 +1,32 @@
+@use "sass:math";
+
+$gap:15px;
+$bp:800px;
+
+.container {
+    padding-inline: $gap;
+}
+
+
+.row {
+    margin-inline: -$gap;
+    
+    [class*="col-"] {
+        padding: $gap;
+        box-sizing: border-box;
+    }
+
+    @media (min-width:$bp)
+    {
+        display: flex;
+    
+        @for $i from 1 through 12 {
+        .col-#{ $i } {
+            width:math.div(100, 12) * $i * 1%;
+           
+        }
+        
+    }
+}
+
+}

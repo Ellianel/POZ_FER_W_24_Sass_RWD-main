@@ -1,0 +1,25 @@
+@use "sass:list";
+@use "sass:map";
+
+$colors: blue, lime, red;
+
+$width: (
+    body: 50%,
+    header: 65%,
+    section: 20%
+);
+
+body {
+    background-color: list.nth($colors, 1);
+    width:map.get($width, body);
+}
+section.main-width {
+    background-color: list.nth($colors, 2);
+    width:map.get($width, section);
+
+}
+header.main-width {
+    background-color: list.nth($colors, 3);
+    width:map.get($width, header);
+
+}

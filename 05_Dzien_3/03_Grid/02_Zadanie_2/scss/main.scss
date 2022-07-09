@@ -1,0 +1,25 @@
+@use 'grid';
+
+.header {
+	height: 100px;
+	background-color: purple;
+}
+
+.left {
+	height: 50px;
+	background-color: blue;
+	margin-bottom: 10px;
+}
+.mid {
+	background-color: yellow;
+	height: 300px;
+}
+.right {
+	background-color: aqua;
+	height: 300px;
+}
+
+.footer {
+	height: 100px;
+	background-color: royalblue;
+}
