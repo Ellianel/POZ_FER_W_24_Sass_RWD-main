@@ -1,0 +1,56 @@
+$mobile : 760px;
+
+// wersja grid
+
+.images-g {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    div{
+        background-image: url('../images/rabbit.png');
+        background-size: cover;
+    }
+
+    @media (max-width: $mobile) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+}
+
+
+// wersja flexbox
+.images-f {
+        display: flex;
+
+
+        img {
+            width: 50%;
+        }
+
+        div {
+            background-image: url('../images/rabbit.png');
+            width: 50%;
+        }
+
+        @media (max-width: $mobile) {
+            flex-direction: column;
+
+        }
+
+        img, div {
+            width: 100%;
+        }
+
+        div {
+            aspect-ratio: 1024 / 576;
+        }
+}

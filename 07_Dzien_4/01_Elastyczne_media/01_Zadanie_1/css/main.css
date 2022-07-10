@@ -1,0 +1,41 @@
+.images-g {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.images-g img {
+  max-width: 100%;
+  height: auto;
+}
+.images-g div {
+  background-image: url("../images/rabbit.png");
+  background-size: cover;
+}
+@media (max-width: 760px) {
+  .images-g {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.images-f {
+  display: flex;
+}
+.images-f img {
+  width: 50%;
+}
+.images-f div {
+  background-image: url("../images/rabbit.png");
+  width: 50%;
+}
+@media (max-width: 760px) {
+  .images-f {
+    flex-direction: column;
+  }
+}
+.images-f img, .images-f div {
+  width: 100%;
+}
+.images-f div {
+  aspect-ratio: 1024/576;
+}
+/*# sourceMappingURL=main.css.map */

@@ -7,10 +7,41 @@
 </head>
 <body>
 
-<div class="board">
-  <div class="zombie"></div>
-</div>
-
-
+  <div class="board">
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+    <div class="zombie"></div>
+  </div>
+  
+  <script>
+    document.querySelectorAll(".zombie").forEach(el => {
+      el.addEventListener("click", e => {
+        console.log('test');
+        e.target.remove();
+      });
+    })
+  </script>
 </body>
 </html>

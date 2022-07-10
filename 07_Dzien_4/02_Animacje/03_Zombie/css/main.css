@@ -1,0 +1,403 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.board {
+  height: 100vh;
+  min-height: 800px;
+  position: relative;
+  overflow: hidden;
+  background: rgb(0, 0, 0) url(../images/board-bg.jpg) center bottom;
+  background-size: cover;
+}
+
+.zombie {
+  width: 200px;
+  height: 312px;
+  background: url(../images/walkingdead.png);
+  position: absolute;
+  left: 110%;
+  bottom: 100px;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 10s 0s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 10s 0s infinite linear;
+}
+
+.zombie:nth-child(1) {
+  bottom: 162px;
+  z-index: 338;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 15s 5s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 15s 5s infinite linear;
+}
+
+.zombie:nth-child(2) {
+  bottom: 142px;
+  z-index: 358;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 14s 2s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 14s 2s infinite linear;
+}
+
+.zombie:nth-child(3) {
+  bottom: 161px;
+  z-index: 339;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 17s 17s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 17s 17s infinite linear;
+}
+
+.zombie:nth-child(4) {
+  bottom: 161px;
+  z-index: 339;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 19s 4s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 19s 4s infinite linear;
+}
+
+.zombie:nth-child(5) {
+  bottom: 106px;
+  z-index: 394;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 20s 1s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 20s 1s infinite linear;
+}
+
+.zombie:nth-child(6) {
+  bottom: 169px;
+  z-index: 331;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 11s 3s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 11s 3s infinite linear;
+}
+
+.zombie:nth-child(7) {
+  bottom: 200px;
+  z-index: 300;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 16s 13s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 16s 13s infinite linear;
+}
+
+.zombie:nth-child(8) {
+  bottom: 192px;
+  z-index: 308;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 11s 13s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 11s 13s infinite linear;
+}
+
+.zombie:nth-child(9) {
+  bottom: 195px;
+  z-index: 305;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 17s 5s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 17s 5s infinite linear;
+}
+
+.zombie:nth-child(10) {
+  bottom: 183px;
+  z-index: 317;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 12s 16s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 12s 16s infinite linear;
+}
+
+.zombie:nth-child(11) {
+  bottom: 173px;
+  z-index: 327;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 17s 11s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 17s 11s infinite linear;
+}
+
+.zombie:nth-child(12) {
+  bottom: 115px;
+  z-index: 385;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 12s 18s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 12s 18s infinite linear;
+}
+
+.zombie:nth-child(13) {
+  bottom: 123px;
+  z-index: 377;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 15s 7s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 15s 7s infinite linear;
+}
+
+.zombie:nth-child(14) {
+  bottom: 124px;
+  z-index: 376;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 16s 14s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 16s 14s infinite linear;
+}
+
+.zombie:nth-child(15) {
+  bottom: 112px;
+  z-index: 388;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 17s 5s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 17s 5s infinite linear;
+}
+
+.zombie:nth-child(16) {
+  bottom: 172px;
+  z-index: 328;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 17s 11s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 17s 11s infinite linear;
+}
+
+.zombie:nth-child(17) {
+  bottom: 196px;
+  z-index: 304;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 18s 3s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 18s 3s infinite linear;
+}
+
+.zombie:nth-child(18) {
+  bottom: 174px;
+  z-index: 326;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 17s 9s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 17s 9s infinite linear;
+}
+
+.zombie:nth-child(19) {
+  bottom: 112px;
+  z-index: 388;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 20s 14s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 20s 14s infinite linear;
+}
+
+.zombie:nth-child(20) {
+  bottom: 111px;
+  z-index: 389;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 15s 9s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 15s 9s infinite linear;
+}
+
+.zombie:nth-child(21) {
+  bottom: 175px;
+  z-index: 325;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 15s 14s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 15s 14s infinite linear;
+}
+
+.zombie:nth-child(22) {
+  bottom: 162px;
+  z-index: 338;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 12s 7s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 12s 7s infinite linear;
+}
+
+.zombie:nth-child(23) {
+  bottom: 184px;
+  z-index: 316;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 12s 19s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 12s 19s infinite linear;
+}
+
+.zombie:nth-child(24) {
+  bottom: 177px;
+  z-index: 323;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 14s 3s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 14s 3s infinite linear;
+}
+
+.zombie:nth-child(25) {
+  bottom: 185px;
+  z-index: 315;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 16s 7s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 16s 7s infinite linear;
+}
+
+.zombie:nth-child(26) {
+  bottom: 166px;
+  z-index: 334;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 13s 20s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 13s 20s infinite linear;
+}
+
+.zombie:nth-child(27) {
+  bottom: 122px;
+  z-index: 378;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 16s 19s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 16s 19s infinite linear;
+}
+
+.zombie:nth-child(28) {
+  bottom: 163px;
+  z-index: 337;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 13s 14s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 13s 14s infinite linear;
+}
+
+.zombie:nth-child(29) {
+  bottom: 110px;
+  z-index: 390;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 18s 4s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 18s 4s infinite linear;
+}
+
+.zombie:nth-child(30) {
+  bottom: 152px;
+  z-index: 348;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 15s 4s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 15s 4s infinite linear;
+}
+
+.zombie:nth-child(31) {
+  bottom: 133px;
+  z-index: 367;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 18s 7s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 18s 7s infinite linear;
+}
+
+.zombie:nth-child(32) {
+  bottom: 106px;
+  z-index: 394;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 11s 4s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 11s 4s infinite linear;
+}
+
+.zombie:nth-child(33) {
+  bottom: 122px;
+  z-index: 378;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 17s 7s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 17s 7s infinite linear;
+}
+
+.zombie:nth-child(34) {
+  bottom: 145px;
+  z-index: 355;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 18s 14s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 18s 14s infinite linear;
+}
+
+.zombie:nth-child(35) {
+  bottom: 183px;
+  z-index: 317;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 19s 5s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 19s 5s infinite linear;
+}
+
+.zombie:nth-child(36) {
+  bottom: 149px;
+  z-index: 351;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 17s 8s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 17s 8s infinite linear;
+}
+
+.zombie:nth-child(37) {
+  bottom: 142px;
+  z-index: 358;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 13s 19s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 13s 19s infinite linear;
+}
+
+.zombie:nth-child(38) {
+  bottom: 147px;
+  z-index: 353;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 19s 4s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 19s 4s infinite linear;
+}
+
+.zombie:nth-child(39) {
+  bottom: 194px;
+  z-index: 306;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 15s 1s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 15s 1s infinite linear;
+}
+
+.zombie:nth-child(40) {
+  bottom: 144px;
+  z-index: 356;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 12s 4s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 12s 4s infinite linear;
+}
+
+.zombie:nth-child(41) {
+  bottom: 194px;
+  z-index: 306;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 18s 17s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 18s 17s infinite linear;
+}
+
+.zombie:nth-child(42) {
+  bottom: 167px;
+  z-index: 333;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 18s 11s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 18s 11s infinite linear;
+}
+
+.zombie:nth-child(43) {
+  bottom: 189px;
+  z-index: 311;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 11s 17s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 11s 17s infinite linear;
+}
+
+.zombie:nth-child(44) {
+  bottom: 123px;
+  z-index: 377;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 20s 7s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 20s 7s infinite linear;
+}
+
+.zombie:nth-child(45) {
+  bottom: 181px;
+  z-index: 319;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 18s 20s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 18s 20s infinite linear;
+}
+
+.zombie:nth-child(46) {
+  bottom: 128px;
+  z-index: 372;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 17s 3s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 17s 3s infinite linear;
+}
+
+.zombie:nth-child(47) {
+  bottom: 126px;
+  z-index: 374;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 11s 12s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 11s 12s infinite linear;
+}
+
+.zombie:nth-child(48) {
+  bottom: 146px;
+  z-index: 354;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 16s 8s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 16s 8s infinite linear;
+}
+
+.zombie:nth-child(49) {
+  bottom: 133px;
+  z-index: 367;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 12s 8s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 12s 8s infinite linear;
+}
+
+.zombie:nth-child(50) {
+  bottom: 199px;
+  z-index: 301;
+  -webkit-animation: walk 0.5s 0s infinite steps(9), move 13s 9s infinite linear;
+          animation: walk 0.5s 0s infinite steps(9), move 13s 9s infinite linear;
+}
+
+@-webkit-keyframes walk {
+  100% {
+    background-position: -1800px 0;
+  }
+}
+
+@keyframes walk {
+  100% {
+    background-position: -1800px 0;
+  }
+}
+@-webkit-keyframes move {
+  0% {
+    left: 110%;
+  }
+  100% {
+    left: calc(-10% - 200px);
+  }
+}
+@keyframes move {
+  0% {
+    left: 110%;
+  }
+  100% {
+    left: calc(-10% - 200px);
+  }
+}
+/*# sourceMappingURL=main.css.map */
