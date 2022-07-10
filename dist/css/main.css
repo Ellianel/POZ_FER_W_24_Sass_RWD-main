@@ -1,56 +1,23 @@
-body {
-  margin: 0;
+.blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.all {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 150px 1fr 150px;
-  grid-template-rows: 150px 1fr 150px;
-  grid-template-areas: "head head head" "asi1 main asi2" "foot foot foot";
+.block {
+  width: 25%;
+  height: 100vh;
+  border: 1px solid red;
 }
 
-.header {
-  background-color: rebeccapurple;
-  grid-area: head;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px;
+@media (max-width: 450px) {
+  .blocks {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
-
-.logo {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  color: aliceblue;
-  align-self: center;
-}
-
-.nav {
-  grid-column: -1/-2;
-  grid-row: 1/2;
-  justify-self: end;
-}
-
-.nav-list .nav-list li .nav-list a {
-  color: white;
-}
-
-.main {
-  background-color: gold;
-  grid-area: main;
-}
-
-.aside1 {
-  background-color: crimson;
-  grid-area: asi1;
-}
-
-.aside2 {
-  background-color: springgreen;
-  grid-area: asi2;
-}
-
-.footer {
-  background-color: dodgerblue;
-  grid-area: foot;
+@media (max-width: 1024px) {
+  .blocks:first-child, .blocks:last-child {
+    overflow: visible;
+  }
 }/*# sourceMappingURL=main.css.map */

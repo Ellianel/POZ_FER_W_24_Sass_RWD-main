@@ -1,1 +1,41 @@
 // Zadanie 1
+.blocks {
+    display: flex;
+}
+.block {
+    width: 25%;
+    height: 100vh;
+    border: 1px solid red;
+}
+@media (max-width:450px) {
+    .blocks {
+        display: grid;
+        grid-template-columns:  1fr ;
+    }
+    
+    .blocks:last-child {
+       
+    }
+
+}
+@media (max-width:720px){
+    .blocks {
+        
+    }
+    .blocks:first-child {
+        
+    }
+    .blocks:last-child {
+        
+    }
+}
+@media (max-width:1024px) {
+
+    .blocks {
+        
+    }
+
+    .blocks:first-child, .blocks:last-child {
+        overflow: visible;
+    }
+}
